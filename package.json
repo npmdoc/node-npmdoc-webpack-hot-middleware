@@ -1,0 +1,17 @@
+{
+    "buildNpmdoc":"webpack-hot-middleware",
+    "devDependencies": {
+        "webpack-hot-middleware": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name":"npmdoc-webpack-hot-middleware",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-webpack-hot-middleware.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh"
+    },
+    "version": "0.0.1"
+}
