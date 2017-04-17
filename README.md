@@ -1,9 +1,11 @@
 # api documentation for  [webpack-hot-middleware (v2.18.0)](https://github.com/glenjamin/webpack-hot-middleware#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webpack-hot-middleware.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webpack-hot-middleware) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webpack-hot-middleware.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webpack-hot-middleware)
 #### Webpack hot reloading you can attach to your own server
 
-[![NPM](https://nodei.co/npm/webpack-hot-middleware.png?downloads=true)](https://www.npmjs.com/package/webpack-hot-middleware)
+[![NPM](https://nodei.co/npm/webpack-hot-middleware.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/webpack-hot-middleware)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-webpack-hot-middleware/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-webpack-hot-middleware_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-webpack-hot-middleware/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-webpack-hot-middleware/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-webpack-hot-middleware/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-webpack-hot-middleware/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-webpack-hot-middleware/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-webpack-hot-middleware/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +19,7 @@
 
 {
     "author": {
-        "name": "Glen Mailer",
-        "email": "glen@stainlessed.co.uk"
+        "name": "Glen Mailer"
     },
     "bugs": {
         "url": "https://github.com/glenjamin/webpack-hot-middleware/issues"
@@ -59,13 +60,11 @@
     "main": "middleware.js",
     "maintainers": [
         {
-            "name": "glenjamin",
-            "email": "glenjamin@gmail.com"
+            "name": "glenjamin"
         }
     ],
     "name": "webpack-hot-middleware",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/glenjamin/webpack-hot-middleware.git"
@@ -76,39 +75,6 @@
     },
     "version": "2.18.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module webpack-hot-middleware](#apidoc.module.webpack-hot-middleware)
-1.  object <span class="apidocSignatureSpan">webpack-hot-middleware.</span>helpers
-
-#### [module webpack-hot-middleware.helpers](#apidoc.module.webpack-hot-middleware.helpers)
-1.  [function <span class="apidocSignatureSpan">webpack-hot-middleware.helpers.</span>pathMatch (url, path)](#apidoc.element.webpack-hot-middleware.helpers.pathMatch)
-
-
-
-# <a name="apidoc.module.webpack-hot-middleware"></a>[module webpack-hot-middleware](#apidoc.module.webpack-hot-middleware)
-
-
-
-# <a name="apidoc.module.webpack-hot-middleware.helpers"></a>[module webpack-hot-middleware.helpers](#apidoc.module.webpack-hot-middleware.helpers)
-
-#### <a name="apidoc.element.webpack-hot-middleware.helpers.pathMatch"></a>[function <span class="apidocSignatureSpan">webpack-hot-middleware.helpers.</span>pathMatch (url, path)](#apidoc.element.webpack-hot-middleware.helpers.pathMatch)
-- description and source-code
-```javascript
-function pathMatch(url, path) {
-  if (url == path) return true;
-  var q = url.indexOf('?');
-  if (q == -1) return false;
-  return url.substring(0, q) == path;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
