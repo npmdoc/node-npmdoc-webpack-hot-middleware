@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/glenjamin/webpack-hot-middleware#readme"
-
-    >webpack-hot-middleware (v2.18.0)</a>
+    <a href="https://github.com/glenjamin/webpack-hot-middleware#readme">webpack-hot-middleware (v2.18.0)</a>
 </h1>
 <h4>Webpack hot reloading you can attach to your own server</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.webpack-hot-middleware">module webpack-hot-middleware</a><ol>
 
@@ -128,30 +121,30 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function webpackHotMiddleware(compiler, opts) {
   opts = opts || {};
-  opts.log = typeof opts.log == &#x27;undefined&#x27; ? console.log.bind(console) : opts.log;
-  opts.path = opts.path || &#x27;/__webpack_hmr&#x27;;
+  opts.log = typeof opts.log == 'undefined' ? console.log.bind(console) : opts.log;
+  opts.path = opts.path || '/__webpack_hmr';
   opts.heartbeat = opts.heartbeat || 10 * 1000;
 
   var eventStream = createEventStream(opts.heartbeat);
   var latestStats = null;
 
-  compiler.plugin(&#x22;compile&#x22;, function() {
+  compiler.plugin("compile", function() {
     latestStats = null;
-    if (opts.log) opts.log(&#x22;webpack building...&#x22;);
-    eventStream.publish({action: &#x22;building&#x22;});
+    if (opts.log) opts.log("webpack building...");
+    eventStream.publish({action: "building"});
   });
-  compiler.plugin(&#x22;done&#x22;, function(statsResult) {
+  compiler.plugin("done", function(statsResult) {
     // Keep hold of latest stats so they can be propagated to new clients
     latestStats = statsResult;
-    publishStats(&#x22;built&#x22;, latestStats, eventStream, opts.log);
+    publishStats("built", latestStats, eventStream, opts.log);
   });
   var middleware = function(req, res, next) {
     if (!pathMatch(req.url, opts.path)) return next();
     eventStream.handler(req, res);
     if (latestStats) {
-      // Explicitly not passing in `log` fn as we don&#x27;t want to log again on
+      // Explicitly not passing in `log` fn as we don't want to log again on
       // the server
-      publishStats(&#x22;sync&#x22;, latestStats, eventStream);
+      publishStats("sync", latestStats, eventStream);
     }
   };
   middleware.publish = eventStream.publish;
@@ -193,7 +186,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function pathMatch(url, path) {
   if (url == path) return true;
-  var q = url.indexOf(&#x27;?&#x27;);
+  var q = url.indexOf('?');
   if (q == -1) return false;
   return url.substring(0, q) == path;
 }</pre></li>
@@ -227,3 +220,4 @@
     ]
 </div>
 </div>
+</body></html>
