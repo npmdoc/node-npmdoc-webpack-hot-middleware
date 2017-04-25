@@ -1,4 +1,7 @@
-# api documentation for  [webpack-hot-middleware (v2.18.0)](https://github.com/glenjamin/webpack-hot-middleware#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webpack-hot-middleware.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webpack-hot-middleware) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webpack-hot-middleware.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webpack-hot-middleware)
+# npmdoc-webpack-hot-middleware
+
+#### basic api documentation for  [webpack-hot-middleware (v2.18.0)](https://github.com/glenjamin/webpack-hot-middleware#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webpack-hot-middleware.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webpack-hot-middleware) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webpack-hot-middleware.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webpack-hot-middleware)
+
 #### Webpack hot reloading you can attach to your own server
 
 [![NPM](https://nodei.co/npm/webpack-hot-middleware.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/webpack-hot-middleware)
@@ -73,7 +76,8 @@
         "test": "mocha",
         "travis": "istanbul cover _mocha --"
     },
-    "version": "2.18.0"
+    "version": "2.18.0",
+    "bin": {}
 }
 ```
 
